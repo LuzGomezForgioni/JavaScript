@@ -31,7 +31,7 @@ let productos = [
     new Producto(3, "Fuente Cargador", 500, "cargadores"),
     new Producto(4, "Cable USB", 300, "cargadores"),
     new Producto(5, "iPhone X", 300000, "celulares"),
-    new Producto(6, "Motorola G20", 5000, "celulares"),
+    new Producto(6, "Motorola G20", 50000, "celulares"),
     new Producto(7, "Silla Gamer", 30000, "otros"),
     new Producto(8, "Auriculares Gamer", 5000, "otros"),
 ];

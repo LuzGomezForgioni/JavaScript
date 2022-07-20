@@ -50,49 +50,49 @@
                     <img class="card-img-top" src="img/funda1.png" alt="Funda Motorola" style="width:55%">
                     <div class="card-body">
                         <h4 class="card-title">Funda Motorola</h4>
-                        <a href="#" class="btn btn-primary">$700</a>
+                        <a class="btn btn-primary">$700</a>
                     </div>
                 </div>
                 <div class="card" style="width:200px">
                     <img class="card-img-top" src="img/funda2.png" alt="Funda Samsung" style="width:65%">
                     <div class="card-body">
                         <h4 class="card-title">Funda Samsung</h4>
-                        <a href="#" class="btn btn-primary">$700</a>
+                        <a class="btn btn-primary">$700</a>
                     </div>
                 </div>
                 <div class="card" style="width:250px">
                     <img class="card-img-top" src="img/temp1.png" alt="Templado" style="width:90%">
                     <div class="card-body">
                         <h4 class="card-title">Templado 9D Motorola</h4>
-                        <a href="#" class="btn btn-primary">$600</a>
+                        <a class="btn btn-primary">$600</a>
                     </div>
                 </div>
                 <div class="card" style="width:250px">
                     <img class="card-img-top" src="img/cargador1.png" alt="Fuente Cargador" style="width:70%">
                     <div class="card-body">
                         <h4 class="card-title">Fuente Cargador</h4>
-                        <a href="#" class="btn btn-primary">$500</a>
+                        <a class="btn btn-primary">$500</a>
                     </div>
                 </div>
                 <div class="card" style="width:250px">
                     <img class="card-img-top" src="img/cargador2.png" alt="Cable USB" style="width:80%">
                     <div class="card-body">
                         <h4 class="card-title">Cable Cargador</h4>
-                        <a href="#" class="btn btn-primary">$300</a>
+                        <a class="btn btn-primary">$300</a>
                     </div>
                 </div>
                 <div class="card" style="width:250px">
                     <img class="card-img-top" src="img/auri1.png" alt="Auricular Bluetooth 1" style="width:65%">
                     <div class="card-body">
                         <h4 class="card-title" style="width:110%">Auricular Bluetooth Celeste</h4>
-                        <a href="#" class="btn btn-primary">$2.500</a>
+                        <a class="btn btn-primary">$2.500</a>
                     </div>
                 </div>
                 <div class="card" style="width:250px">
                     <img class="card-img-top" src="img/auri2.png" alt="Auricular Bluetooth 2" style="width:100%">
                     <div class="card-body">
                         <h4 class="card-title">Auricular Bluetooth Negro</h4>
-                        <a href="#" class="btn btn-primary">$3.600</a>
+                        <a class="btn btn-primary">$3.600</a>
                     </div>
                 </div>
                 <div class="card" style="width:250px">
@@ -100,14 +100,14 @@
                         height="100%">
                     <div class="card-body">
                         <h4 class="card-title">Palo de selfie</h4>
-                        <a href="#" class="btn btn-primary">$900</a>
+                        <a class="btn btn-primary">$900</a>
                     </div>
                 </div>
                 <div class="card" style="width:250px">
                     <img class="card-img-top" src="img/silla1.png" alt="Silla Gamer" style="width:100%" height="100%">
                     <div class="card-body">
                         <h4 class="card-title">Silla Gamer</h4>
-                        <a href="#" class="btn btn-primary">$30.000</a>
+                        <a class="btn btn-primary">$30.000</a>
                     </div>
                 </div>
             </div>
@@ -124,21 +124,20 @@
                                 <label class="form-label">Ingrese el nombre del producto elegido</label>
                                 <input id="producto" class="form-control" type="text" placeholder="Ej.: Funda" required>
                             </div>
-                            <div class="mb-3">
-                                <label class="form-label">Ingrese el precio del producto</label>
-                                <input id="precio" class="form-control" type="number" placeholder="Ej.: $700" required>
-                            </div>
 
                             <div class="mb-3">
                                 <label class="form-label">Ingrese la/s unidad/es que desea</label>
                                 <input id="unidad" class="form-control" type="number" placeholder="Ej.: 3" required>
                             </div>
 
+                            <div class="mb-3">
+                                <label class="form-label">Ingrese el precio del producto</label>
+                                <input id="precio" class="form-control" type="number" placeholder="Ej.: $700" required>
+                            </div>
+
                             <div class="form-check mb-3">
                                 <label class="form-check-label"></label>
-                                <input class="form-check-input" type="checkbox" name="remember"> ¿Desea recibir
-                                información
-                                sobre futuros productos?
+                                <input class="form-check-input" type="checkbox" name="remember"> ¿Desea recibir información sobre futuros productos?
                             </div>
 
                             <div class="d-grid gap-2">
@@ -152,16 +151,22 @@
                             <thead>
                                 <tr>
                                     <td><strong>Producto</strong></td>
-                                    <td><strong>Precio $</strong></td>
                                     <td><strong>Unidad/es</strong></td>
+                                    <td><strong>Precio</strong></td>
                                 </tr>
                                 </th>
                             </thead>
-                            <tbody class="tabla">
+                            <tbody id="tabla">
+                                <tr id="tabla-total">
+                                    <td><strong>Total</strong></td>
+                                    <td><strong id="cant">Cant.:</strong></td>
+                                    <td><strong id="total">$</strong></td>
+                                </tr>
 
                             </tbody>
                         </table>
                     </div>
+                    
                 </div>
             </div>
         </section>
